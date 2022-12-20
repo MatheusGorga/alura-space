@@ -1,9 +1,8 @@
+import PaginaInicial from "./pages/paginas/PaginaInicial";
 
 function App() {
   return (
-    <h1>
-      Ola mundo
-    </h1>
+    <PaginaInicial />
   );
 }
 
