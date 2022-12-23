@@ -1,0 +1,16 @@
+.rodape {
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+
+  section {
+    display: flex;
+    gap: 16px;
+  }
+
+  h3 {
+    color: #fff;
+  }
+}
