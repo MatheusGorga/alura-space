@@ -1,14 +1,19 @@
 import styles from './Tags.module.scss';
+import fotos from '../galeria/fotos.json';
 
-function Tags() {
+function Tags({ fotoFilter, tags, setItens }) {
   return (
     <div className={styles.tags}>
-      Busque por tags:
+      <p>Filtre por tags:</p>
       <ul className={styles.tags__lista}>
-        <li>Estrelas</li>
-        <li>Galaxias</li>
-        <li>Lua</li>
-        <li>Planeta</li>
+        {tags.map((tag) => {
+          return (
+            <li key={tag} onClick={() => fotoFilter(tag)}>
+              {tag}
+            </li>
+          );
+        })}
+        <li onClick={() => setItens(fotos)}>Todas</li>
       </ul>
     </div>
   );
